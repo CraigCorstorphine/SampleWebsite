@@ -1,0 +1,21 @@
+The following are some things have been suggested as improvements to
+the subversion.apache.org website.
+
+  * Replace the 'class="todo"' items on the site with the content
+    indicated.
+
+  * Pointing folks to the most popular third-party Subversion clients
+    and plugins and stuff.  (Note: this is expressly *not* meant to be
+    an exhaustive list of Subversion-related links.  We're done with
+    maintaining that list.)
+
+  * Pointing folks to the various language bindings.  (Perhaps this can
+    be done on the 'Binary Packages' page, helping folks get their
+    bindings on a platform-by-platform basis.)
+
+  * Get a nightly build of trunk C-API and JavaHL docs going.  Point
+    folks to it (and other useful things) via the currently-obscured
+    /dev/index.html page.
+
+  * Throw Google Ads all over the pages to line C-Mike's pockets.
+    (Just kidding.)

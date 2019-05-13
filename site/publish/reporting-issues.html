@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Apache Subversion Issues</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style type="text/css">
+  @import url("/style/site.css");
+</style>
+</head>
+
+<body>
+<!--#include virtual="/site-banner.html" -->
+<!--#include virtual="/site-nav.html" -->
+<div id="site-content">
+<!--#include virtual="/site-notice.html" -->
+ 
+<h1>Apache Subversion Issues</h1>
+
+<div class="bigpoint">
+
+<p>Please do not file new issues before validating your complaint via
+   a well-formed bug report sent to:</p>
+
+<p><a href="mailto:users@subversion.apache.org"
+                  >users@subversion.apache.org</a></p>
+
+<p>Unvalidated issues will be unceremoniously closed.  Trust us
+   &mdash; we have <a href="docs/community-guide/issues.html" >good
+   reasons</a> for this.</p>
+
+</div> <!-- .bigpoint -->
+
+<p>Chances are good that if you're on this page, you've come either to
+   complain about Subversion, or you've come to check on a previous
+   complaint about Subversion.  Hey, we understand that.  And for what
+   it's worth, Subversion is the amazing software that it is largely
+   because of the constructive criticism we've received about it over
+   the years.  Having said that, we <strong>strongly</strong>
+   recommend that if you've not done so already, you read the
+   <a href="docs/community-guide/issues.html" >"Bugs / Issues" section</a>
+   of the <a href="docs/community-guide/" >Subversion Community
+   Guide</a>.  Not only will you learn how to increase the quality of
+   your own complaints and requests, but in doing so, you'll increase
+   the likelihood that we'll recognize them as constructive.</p>
+
+
+<div class="h2" id="queries">
+<h2>Handy Dandy Issue Tracker Queries
+  <a class="sectionlink" href="#queries"
+    title="Link to this section">&para;</a>
+</h2>
+
+<p>Do you know the Subversion issue number you're interested in?  Use
+   this form to view that issue directly.</p>
+
+<form method="get" onsubmit="this.action='https://issues.apache.org/jira/browse/SVN-'+this.issueNumber.value;">
+<div style="display: inline;">
+<input name="issueNumber" size="10" placeholder="Issue number..."
+       style="width: 10em" 
+       type="number"
+       />
+<input type="submit" value="Jump to issue" />
+</div>
+</form>
+
+<p>Perhaps you'd rather do a natural language search through issue
+   descriptions?</p>
+
+<form onsubmit="window.open('https://issues.apache.org/jira/issues/?jql=' + escape('project = SVN AND text ~ &quot;'+this.searchText.value+'&quot;'));">
+<div style="display: inline;">
+<input name="searchText" size="20" placeholder="Keywords..."
+       style="width: 10em" 
+       />
+<input type="submit" value="Keyword search" />
+</div>
+</form>
+
+<p>Here are some issue tracker query links that we believe are of
+   general utility to folks.  If you don't see one here that you like,
+   that's okay, you can formulate your own structured query at 
+   <a href="https://issues.apache.org/jira/issues/?jql=project%20%3D%20SVN"
+           >https://issues.apache.org/jira/issues/?jql=project = SVN</a>.</p>
+
+<ul>
+<li><a href="https://issues.apache.org/jira/issues/?jql=project%20%3D%20SVN">All issues</a></li>
+<li><a href="https://issues.apache.org/jira/issues/?jql=project%20%3D%20SVN%20AND%20resolution%20%3D%20Unresolved%20ORDER%20BY%20priority%20DESC"
+>Open issues</a></li>
+<li><a href="https://issues.apache.org/jira/issues/?jql=project%20%3D%20SVN%20AND%20resolution%20%3D%20Unresolved%20AND%20fixVersion%20%3D%20---%20ORDER%20BY%20priority%20DESC">Issues in need of triaging</a></li>
+<li><a href="https://issues.apache.org/jira/issues/?jql=project%20%3D%20SVN%20AND%20resolution%20%3D%20Unresolved%20AND%20labels%20%3D%20bite-sized%20ORDER%20BY%20priority%20DESC">Issues that might be relatively easy to fix</a></li>
+<li><a href="https://issues.apache.org/jira/issues/?jql=project%20%3D%20SVN%20AND%20resolution%20%3D%20Unresolved%20AND%20labels%20%3D%20patch%20ORDER%20BY%20priority%20DESC">Issues that have associated patches</a></li>
+<li><a href="https://issues.apache.org/jira/issues/?jql=project%20%3D%20SVN%20AND%20status%20in%20%28Resolved%2C%20Closed%29%20ORDER%20BY%20priority%20DESC">Closed issues</a></li>
+</ul>
+
+
+
+</div> <!-- #queries -->
+
+<div class="h2" id="issuezilla">
+<h2>Issuezilla, the Old Bug Tracker
+  <a class="sectionlink" href="#issuezilla"
+    title="Link to this section">&para;</a>
+</h2>
+
+<p>Subversion's previous issue tracker can be accessed at <a href="http://subversion.tigris.org/servlets/ProjectIssues">http://subversion.tigris.org/servlets/ProjectIssues</a>. Its content was transferred to the new tracker in September 2015. Since then, it is available for read-only access, until we decide to turn it off.</p>
+
+</div> <!-- #issuezilla -->
+
+</div> <!-- #site-content -->
+</body>
+</html>
